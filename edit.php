@@ -23,7 +23,7 @@
   </head>
   <body>
     <div class="container">
-      <form action="updatedb.php?edit_id=<?php echo $edit_id; ?>" method = "post" id="UpdateForm" class="form-horizontal mt-5">
+      <form action="editdbs.php?edit_id=<?php echo $edit_id; ?>" method = "post" id="UpdateForm" class="form-horizontal mt-5">
         <div class="display-3 text-center mb-3">Update Form</div>
         <div class="form-group">
           <label for="name" class="col-sm-3 control-label">Name</label>
@@ -41,8 +41,8 @@
 
         <div class="form-group">
           <div class="col-md-12 mt-3">
-            <input type="submit" name="upbtn" id="idupbtn" class="btn btn-success" value="แก้ไข">
-            <a href="index.php" class="btn btn-danger">ยกเลิก</a>
+            <input type="submit" name="upbtn" id="idupbtn" class="btn btn-success" value="Confirm">
+            <a href="index.php" class="btn btn-danger">Cancel</a>
           </div>
         </div>
 
