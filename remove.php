@@ -24,7 +24,7 @@
     }
 
     $id = $_REQUEST['delete_id'];
-    $sql = "DELETE FROM guestbook WHERE id='$id'";
+    $sql = "DELETE FROM guestbook WHERE id='$ID'";
 
     if (mysqli_query($conn, $sql)) {
         ?><div class="display-3 text-center mb-3">Deleted Successfully</div>
