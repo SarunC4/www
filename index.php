@@ -38,13 +38,13 @@ while($Result = mysqli_fetch_array($res))
     <td><?php echo $Result['Name'];?></div></td>
     <td><?php echo $Result['Comment'];?></td>
     <td><?php echo $Result['Link'];?></td>
-    <td><?php echo $Result['Action'];?><a href="form.php" class="btn btn-info" role="button">Edit</a> <a href="delete.php" class="btn btn-info" role="button">Remove</a></td>
+    <td><div class="text-center"><a href="delete.php?delete_id=<?php echo $Result['ID']; ?>" class="btn btn-danger"><i class="far fa-trash-alt"></i></a> <a href="update.php?edit_id=<?php echo $Result["ID"]; ?>" class="btn btn-warning"><i class="far fa-edit"></i></a></div></td>
   </tr>
 <?php
 }
 ?>
 </table>
-<div class="text-center"><a href="form.html" class="btn btn-success">เพิ่ม +</a></div>
+<div class="text-center"><a href="form.html" class="btn btn-success">ADD +</a></div>
 <?php
 mysqli_close($conn);
 ?>
